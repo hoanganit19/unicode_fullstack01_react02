@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "email": "hoangan.web@gmail.com",
+      "password": "$2a$10$2Jk5o3jbVTFQJeT/y4DbmehJhuImwY0VKT0U5SZYLDJOy78qMgDUG",
+      "name": "Hoàng An",
+      "id": 1
+    }
+  ]
+}
