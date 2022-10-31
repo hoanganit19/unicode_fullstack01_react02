@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import withRouter from '../Services/withRouter'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export class Product extends Component {
   constructor(props){
@@ -28,11 +29,28 @@ export class Product extends Component {
     }
 
     return (
-      <>
+      <div>
         <h1>Product</h1>
-        <button type='button' onClick={handleButtonClick}>Click me</button>
-        <button type='button' onClick={handleCheckout}>Thanh toán</button>
-      </>
+        
+          <form>
+            <div className='row'>
+              <div className='col-3'>
+                <select className='form-select'>
+                  <option value={'all'}>Tất cả trạng thái</option>
+                  <option value={'active'}>Kích hoạt</option>
+                  <option value={'inactive'}>Chưa kích hoạt</option>
+                </select>
+              </div>
+              <div className='col-7'>
+                <input type={"search"} className={"form-control"} placeholder={"Từ khoá..."}/>
+              </div>
+              <div className='col-2'>
+                <button type='submit' className='btn btn-primary'>Tìm kiếm</button>
+              </div>
+            </div>
+          </form>
+       
+      </div>
     )
   }
 }
